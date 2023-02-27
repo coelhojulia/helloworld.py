@@ -1,2 +1,4 @@
-print("Bom dia")
-print("Boa noite")
+x = "Maria"
+y = 19
+
+print("%s tem %d anos" % (x, y))
