@@ -1,10 +1,6 @@
-idade: int
-salario: float
-nome: str
-sexo: str
-idade = 32
-salario = 4560.9
-nome = "Maria Silva"
-sexo = "F"
-
-print("A funcionária {:s}, sexo {:s}, ganha {:.2f} e tem {:d} anos.".format(nome, sexo, salario, idade))
+b1: float; b2: float; h: float; area: float
+b1 = 6.0
+b2 = 8.0
+h = 5.0
+area = (b1 + b2) / 2.0 * h
+print(area)
