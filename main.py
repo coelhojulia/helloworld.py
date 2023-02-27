@@ -1,10 +1,11 @@
-hora: int
+x: int 
+soma: int
 
-hora = int(input("Digite uma hora do dia: "))
+soma = 0
+x = int(input("Digite o primeiro número: "))
 
-if hora < 12:
-    print("Bom dia")
-elif hora < 18:
-    print("Boa tarde")
-else: 
-    print("Boa noite")
+while x != 0:
+    soma = soma + x
+    x = int(input("Digite outro numero: "))
+
+print("SOMA = ", soma)
