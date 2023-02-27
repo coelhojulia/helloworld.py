@@ -1,2 +1,2 @@
-print("Bom dia", end='')
+print("Bom dia")
 print("Boa noite")
