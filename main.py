@@ -1,5 +1,3 @@
-x:int; y:int
-x = 10
-y = 20
-print(x)
-print(y)
+x: float
+x = 2.3456
+print("{:f}".format(x))
