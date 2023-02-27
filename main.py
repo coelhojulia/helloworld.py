@@ -7,4 +7,4 @@ salario = 4560.9
 nome = "Maria Silva"
 sexo = "F"
 
-print(f"A funcionária {nome}, sexo {sexo}, ganha {salario} e tem {idade} anos")
+print("A funcionária {:s}, sexo {:s}, ganha {:.2f} e tem {:d} anos.".format(nome, sexo, salario, idade))
