@@ -1,8 +1,8 @@
-x = 10
+hora: int
 
-print("Bom dia")
+hora = int(input("Digite uma hora do dia: "))
 
-if x < 0:
-    print("Boa tarde")
-
-print("Boa noite")
+if hora < 12:
+    print("Bom dia")
+else:
+    print("Boa noite")
