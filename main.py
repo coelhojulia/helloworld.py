@@ -1,8 +1,11 @@
-N = int(input("Quantos números serão digitados? "))
+N = int(input("Quantos numeros voce vai digitar? "))
 
-soma = 0
+vet: [float] = [0 for x in range(N)]
+
 for i in range(0, N):
-    x = int(input("Digite um número: "))
-    soma = soma + x
+    vet[i] = float(input("Digite um numero: "))
 
-print("SOMA = ", soma)
+print()
+print("NUMEROS DIGITADOS:")
+for i in range(0, N):
+    print(f"{vet[i]:.1f}")
