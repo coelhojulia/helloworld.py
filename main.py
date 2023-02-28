@@ -5,4 +5,4 @@ print("Dados da segunda pessoa: ")
 nome2 = input("Nome: ")
 idade2 = int(input("Idade: "))
 media = (idade1 + idade2) / 2
-print(f"A idade media de {nome1} e {nome2} e de {media:f1} anos")
+print(f"A idade media de {nome1} e {nome2} e de {media:.1f} anos")
