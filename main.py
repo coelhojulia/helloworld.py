@@ -1,17 +1,12 @@
-M = int; N = int
+import math
 
-M = int(input("Quantas linhas terá a sua matriz? "))
-N = int(input("Quantas colunas terá a sua matriz? "))
+base = float(input("Base do retangulo: "))
+altura = float(input("Altura do retangulo: "))
 
-mat: [[int]] = [[0 for x in range(N)] for x in range(M)]
+area = base * altura
+perimetro = 2 * (base + altura)
+diagonal = math.sqrt(base ** 2 + altura ** 2)
 
-for i in range(0, M):
-    for j in range(0, N):
-        mat[i][j] =  int(input(f"Elemento [{i},{j}]: "))
-
-print()
-print("MATRIZ DIGITADA: ")
-for i in range(0, M):
-    for j in range(0, N):
-        print(f"{mat[i][j]} ", end="")
-    print()
+print(f"AREA = {area:.4f}")
+print(f"PERIMETRO = {perimetro:.4f}")
+print(f"DIAGONAL = {diagonal:.4f}")
