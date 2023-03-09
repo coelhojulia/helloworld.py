@@ -1,15 +1,22 @@
-print("Digite dois numeros: ")
-x = int(input())
-y = int(input())
+N = int(input("Quantos numeros voce vai digitar? "))
 
-if x > y:
-    troca = x
-    x = y
-    y = troca
+vet = [0 for x in range(N)]
+
+for i in range(0, N):
+    vet[i] = float(input("Digite um numero: "))
+
+print()
+print("VALORES = ", end="")
+for i in range(0, N):
+    print(f"{vet[i]:.1f} ", end="")
+
+print()
 
 soma = 0
-for i in range(x+1, y):
-    if i % 2 != 0:
-        soma = soma + i
+for i in range(0, N):
+    soma = soma + vet[i]
 
-print(f"SOMA DOS IMPARES = {soma}")
+print(f"SOMA = {soma: .2f}")
+
+media = soma / N
+print(f"MEDIA = {media: .2f}")
