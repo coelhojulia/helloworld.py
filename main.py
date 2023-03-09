@@ -1,8 +1,12 @@
-print("Dados da primeira pessoa: ")
-nome1 = input("Nome: ")
-idade1 = int(input("Idade: "))
-print("Dados da segunda pessoa: ")
-nome2 = input("Nome: ")
-idade2 = int(input("Idade: "))
-media = (idade1 + idade2) / 2
-print(f"A idade media de {nome1} e {nome2} e de {media:.1f} anos")
+a = int(input("Primeiro valor: "))
+b = int(input("Segundo valor: "))
+c = int(input("Terceiro valor: "))
+
+if a < b and a < c:
+    menor = a
+elif b < c:
+    menor = b
+else:
+    menor = c
+
+print(f"Menor = {menor}")
