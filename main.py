@@ -1,22 +1,20 @@
-N = int(input("Quantos numeros voce vai digitar? "))
+N = int(input("Qual a ordem da matriz? "))
 
-vet = [0 for x in range(N)]
+mat = [[0 for x in range(N)] for x in range(N)]
 
 for i in range(0, N):
-    vet[i] = float(input("Digite um numero: "))
+    for j in range(0, N):
+        mat[i][j] = int(input("Elemento [{i},{j}]:"))
 
+print("DIAGONAL PRINCIPAL: ")
+for i in range(0, N):
+    print(f"{mat[i][i]} ", end="")
 print()
-print("VALORES = ", end="")
+
+cont = 0
 for i in range(0, N):
-    print(f"{vet[i]:.1f} ", end="")
+    for j in range(0, N):
+        if mat[i][j] < 0:
+            cont = cont + 1
 
-print()
-
-soma = 0
-for i in range(0, N):
-    soma = soma + vet[i]
-
-print(f"SOMA = {soma: .2f}")
-
-media = soma / N
-print(f"MEDIA = {media: .2f}")
+print(f"QUANTIDADE DE NEGATIVOS = {cont}")
