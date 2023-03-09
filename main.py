@@ -1,12 +1,13 @@
-a = int(input("Primeiro valor: "))
-b = int(input("Segundo valor: "))
-c = int(input("Terceiro valor: "))
+print("Digite dois numeros:")
+x = int(input())
+y = int(input())
 
-if a < b and a < c:
-    menor = a
-elif b < c:
-    menor = b
-else:
-    menor = c
+while x != y:
+    if x < y:
+        print("CRESCENTE!")
+    else:
+        print("DECRESCENTE!")
 
-print(f"Menor = {menor}")
+    print("Digite outros dois numeros: ")
+    x = int(input())
+    y = int(input())
